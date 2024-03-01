@@ -8,8 +8,8 @@ export default function Footer(){
     href="/" className="text-2xl p-10">© Mohamed Amine Mezzat</Link>
     </h2>
     <ul className="flex justify-around w-64 p-4">
-      <Link href="/about" className="text-xl">About</Link>
-      <Link href="/blog" className="text-xl">Blog</Link>
+      <li><Link href="/about" className="text-xl">About</Link></li>
+      <li><Link href="/blog" className="text-xl">Blog</Link></li>
     </ul>
    </header>
 )}

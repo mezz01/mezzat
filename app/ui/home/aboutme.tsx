@@ -18,7 +18,6 @@ and I'm excited about the prospect of sharpening my skills alongside <br />
 like-minded individuals who are driven to excel. <br />
 
 </p>
-
                 <Image src="/me.svg" 
                     alt="Avatar"
                     className="pb-24 pr-56"
