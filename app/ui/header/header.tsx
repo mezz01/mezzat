@@ -11,7 +11,7 @@ export default function Footer(){
       gsap.from(".header", {
         y: -100,
         ease: "power8.out",
-        duration: 2.5
+        duration: 4
       })
   })
   return(
