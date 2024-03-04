@@ -13,9 +13,9 @@ export default function Aboutme() {
     useGSAP(()=>{
         gsap.from(".abt",{
             scrollTrigger: ".abt",
-            borderRadius: "60% 60%",
-            duration: 2,
-
+            borderRadius: "40% 40%",
+            duration: 2.5,
+            y: 250
         })
     })
 
