@@ -9,9 +9,9 @@ export default function Footer(){
 
   useGSAP(()=>{
       gsap.from(".header", {
-        y: -100,
+        y: -300,
         ease: "power8.out",
-        duration: 4
+        duration: 3
       })
   })
   return(
