@@ -2,17 +2,25 @@
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Image from "next/image";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Aboutme() {
     
     useGSAP(()=>{
-        
+        gsap.from(".abt",{
+            scrollTrigger: ".abt",
+            borderRadius: "60% 60%",
+            duration: 2,
+
+        })
     })
 
     return (
-        <div className="rounded-[60px] bg-stone-200 text-stone-950 flex flex-col h-dvh">
+        <div className="abt rounded-[60px] bg-stone-200 text-stone-950 flex flex-col h-dvh">
             <h1 className="text-9xl italic p-24 pl-44">
                 About me.
             </h1>
