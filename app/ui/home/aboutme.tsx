@@ -20,8 +20,8 @@ export default function Aboutme() {
     })
 
     return (
-        <div className="abt rounded-[60px] bg-stone-200 text-stone-950 flex flex-col min-h-screen w-full">
-            <h1 className="text-9xl italic p-24 pl-44">
+        <div className="abt rounded-[60px] bg-stone-200 text-stone-950 relative min-h-screen w-full">
+            <h1 className="text-9xl italic font-medium p-24 pl-44">
                 About me.
             </h1>
             <section className="flex justify-around rounded-lg pb-20 overflow-x-clip">
@@ -32,7 +32,7 @@ export default function Aboutme() {
                 </p>
                 <Image src="/me.svg" 
                     alt="Avatar"
-                    className="meimg pb-24 right-0 shadow-xl rounded-full"
+                    className="meimg pb-24 right-0"
                     width={500}
                     height={500}
                 ></Image>

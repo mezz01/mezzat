@@ -35,7 +35,7 @@ export default function Hero(){
     })
 
     return(
-        <div className="flex flex-col h-dvh" >
+        <div className="flex flex-col sticky h-svh" >
             <div className="hero relative">
                 <h1 className="herotxt text-[130px] italic p-36 pl-2 pr-2 pb-10 font-semibold tracking-wide text-center leading-tight">
                 An Ambitious<br/>Web Developer ,<br/>With an eye on Design
