@@ -37,7 +37,7 @@ export default function Aboutme() {
     useGSAP(()=>{
         gsap.from(".abt",{
             scrollTrigger: ".abt",
-            borderRadius: "40% 40%",
+            borderRadius: "20% 20%",
             duration: 2.5,
             y: 250
         })
@@ -50,6 +50,7 @@ export default function Aboutme() {
             </h1>
             <section className="flex flex-col rounded-lg pb-20 overflow-x-clip">
                 <div className="flex">
+                <Parallax speed={5}>
                     <p className="text-4xl p-24 font-sans font-thin tracking-widest leading-normal">
                         <span className="word">With </span>
                         <span className="word">a </span>
@@ -96,7 +97,8 @@ export default function Aboutme() {
                         <span className="word">the </span>
                         <span className="word">craft. </span>
                     </p>
-                    <Parallax speed={33}>
+                    </Parallax>
+                    <Parallax speed={24}>
                         <Image src="/me.svg" 
                             alt="Avatar"
                             className="meimg right-1/4 pr-10"

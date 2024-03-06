@@ -10,8 +10,8 @@ import { Parallax } from 'react-scroll-parallax';
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <Parallax speed={-20} easing={"easeIn"} ><Hero></Hero></Parallax>
-      <Parallax speed={20} ><Aboutme></Aboutme></Parallax>
+      <Parallax speed={-30} ><Hero></Hero></Parallax>
+      <Parallax speed={40} easing={"easeIn"}><Aboutme></Aboutme></Parallax>
       <Services></Services>
      </main>
   );
