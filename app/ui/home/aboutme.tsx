@@ -102,7 +102,7 @@ export default function Aboutme() {
                         height={300}
                     ></Image>
                 </div>
-                <Link href="/about" className="word text-4xl italic font-medium p-24 pt-0">
+                <Link href="/about" className="text-4xl italic font-medium p-24 pt-0">
                     See more ...
                 </Link>
             </section>
