@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Bodoni_Moda } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/ui/header/header";
+import SmoothScrolling from "./SmoothScrolling";
+import { Providers } from "./provider";
 
 const bodoni = Bodoni_Moda({ 
   subsets: ["latin"],
@@ -23,7 +25,7 @@ export default function RootLayout({
     <html className="text-stone-300 bg-stone-950" lang="en">
       <body className={bodoni.className}>
         <Header></Header>
-        {children}
+        <SmoothScrolling><Providers>{children}</Providers></SmoothScrolling>
       </body>
     </html>
   );

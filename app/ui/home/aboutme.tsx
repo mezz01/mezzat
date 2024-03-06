@@ -3,6 +3,7 @@
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Parallax } from 'react-scroll-parallax';
 
 import Image from "next/image";
 import Link from "next/link";
@@ -95,12 +96,14 @@ export default function Aboutme() {
                         <span className="word">the </span>
                         <span className="word">craft. </span>
                     </p>
-                    <Image src="/me.svg" 
-                        alt="Avatar"
-                        className="meimg right-1/4 pr-10"
-                        width={300}
-                        height={300}
-                    ></Image>
+                    <Parallax speed={33}>
+                        <Image src="/me.svg" 
+                            alt="Avatar"
+                            className="meimg right-1/4 pr-10"
+                            width={300}
+                            height={300}
+                        ></Image>
+                    </Parallax>
                 </div>
                 <div>
                     <Link href="/about" className="text-4xl italic font-medium p-24 pt-0 hover:line-through">
