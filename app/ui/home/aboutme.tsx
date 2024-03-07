@@ -98,10 +98,10 @@ export default function Aboutme() {
                         <span className="word">craft. </span>
                     </p>
                     </Parallax>
-                    <Parallax speed={24}>
+                    <Parallax speed={30}>
                         <Image src="/me.svg" 
                             alt="Avatar"
-                            className="meimg right-1/4 pr-10"
+                            className="meimg right-1/4 pr-10 pt-3"
                             width={300}
                             height={300}
                         ></Image>
