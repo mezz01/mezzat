@@ -7,6 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 import Image from "next/image";
 import Link from "next/link";
+import Expcard from "@/app/ui/home/components/experties"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,15 +22,6 @@ export default function Aboutme() {
             stagger: 0.1,
             x: 100,
             ease : "power2.out"
-        })
-    
-        gsap.to(".starimg2",{
-            rotation: 360,
-            repeat: -1,
-            duration: 4,
-            ease: "none",
-            x:600,
-            yoyo: true
         })
 
         gsap.from(".abt",{
@@ -110,21 +102,12 @@ export default function Aboutme() {
                     </Link>
                 </div>
             </section>
-            <div>
-                <Image 
-                    src="/star.svg" 
-                    alt="Star image failed to load"
-                    className="starimg2 p-10"
-                    width={200}
-                    height={200}>
-                </Image>
-            </div>
             <section className="flex flex-col rounded-lg pb-20 pt-44 overflow-x-clip" >
                 <h1 className="text-9xl italic font-medium pb-0 pl-44 pt-11">
                     Areas of expertise.
                 </h1>
                 <div className="flex">
-                    
+                    <Expcard></Expcard>
                 </div>
             </section>
         </div>
