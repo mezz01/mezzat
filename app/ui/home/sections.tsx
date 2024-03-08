@@ -22,19 +22,16 @@ export default function Aboutme() {
             x: 100,
             ease : "power2.out"
         })
-    })
-
-    useGSAP(()=>{
-        gsap.from(".companim", {
-            duration: 0.5, 
-            opacity: 0,
-            scale: 0,
-            y: -100,
-            ease: "back.in"
+    
+        gsap.to(".starimg2",{
+            rotation: 360,
+            repeat: -1,
+            duration: 4,
+            ease: "none",
+            x:600,
+            yoyo: true
         })
-    })
 
-    useGSAP(()=>{
         gsap.from(".abt",{
             scrollTrigger: ".abt",
             borderRadius: "20% 20%",
@@ -45,10 +42,10 @@ export default function Aboutme() {
 
     return (
         <div className="abt rounded-[60px] bg-stone-200 text-stone-950 relative min-h-screen w-full">
-            <h1 className="companim text-9xl italic font-medium pb-0 pl-44 pt-11">
-                About me.
-            </h1>
             <section className="flex flex-col rounded-lg pb-20 overflow-x-clip">
+                <h1 className="companim text-9xl italic font-medium pb-0 pl-44 pt-11">
+                    About me.
+                </h1>
                 <div className="flex">
                 <Parallax speed={5}>
                     <p className="text-4xl p-24 font-sans font-thin tracking-widest leading-normal">
@@ -101,7 +98,7 @@ export default function Aboutme() {
                     <Parallax speed={30}>
                         <Image src="/me.svg" 
                             alt="Avatar"
-                            className="meimg right-1/4 pr-10 pt-3"
+                            className="meimg right-1/4 p-10"
                             width={300}
                             height={300}
                         ></Image>
@@ -111,6 +108,23 @@ export default function Aboutme() {
                     <Link href="/about" className="text-4xl italic font-medium p-24 pt-0 hover:line-through">
                         See more ...
                     </Link>
+                </div>
+            </section>
+            <div>
+                <Image 
+                    src="/star.svg" 
+                    alt="Star image failed to load"
+                    className="starimg2 p-10"
+                    width={200}
+                    height={200}>
+                </Image>
+            </div>
+            <section className="flex flex-col rounded-lg pb-20 pt-44 overflow-x-clip" >
+                <h1 className="text-9xl italic font-medium pb-0 pl-44 pt-11">
+                    Areas of expertise.
+                </h1>
+                <div className="flex">
+                    
                 </div>
             </section>
         </div>

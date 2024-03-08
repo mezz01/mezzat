@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import Hero from "@/app/ui/home/hero"
-import Aboutme from "@/app/ui/home/aboutme"
+import Aboutme from "@/app/ui/home/sections"
 import Services from "@/app/ui/home/footer"
 import { Parallax } from 'react-scroll-parallax';
 import Footer from "./ui/home/footer";
