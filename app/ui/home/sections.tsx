@@ -106,7 +106,7 @@ export default function Aboutme() {
                 <h1 className="text-9xl italic font-medium pb-0 pl-44 pt-11">
                     Areas of expertise.
                 </h1>
-                <Expcard /> 
+                <Expcard />
             </section>
         </div>
     )
