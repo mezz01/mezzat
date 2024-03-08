@@ -102,13 +102,11 @@ export default function Aboutme() {
                     </Link>
                 </div>
             </section>
-            <section className="flex flex-col rounded-lg pb-20 pt-44 overflow-x-clip" >
+            <section className="flex flex-col rounded-lg pb-20 pt-44 overflow-x-clip h-svh" >
                 <h1 className="text-9xl italic font-medium pb-0 pl-44 pt-11">
                     Areas of expertise.
                 </h1>
-                <div className="flex">
-                    <Expcard></Expcard>
-                </div>
+                <Expcard /> 
             </section>
         </div>
     )
