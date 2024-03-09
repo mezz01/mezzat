@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Expcard(){
     return (
         <div className="flex h-min p-24 pt-60 pl-36 justify-center font-serif">
@@ -12,10 +14,16 @@ export default function Expcard(){
                     is thoughtfully designed and flawlessly executed. <br />
                 </p>
                 <p className="text-xl pt-8 italic">
-                    See more
+                    See more ..
                 </p>
             </div>
-            <h2 className="text-[230px] pl-36 font-bold tracking-widest text-stone-700">01.</h2>
+            <Image
+                    src="/number1.svg"
+                    alt="image absolute failed to load"
+                    className="p-24 pt-10 pl-10"
+                    width={600}
+                    height={600}>
+            </Image>
         </div>
     )
 }
