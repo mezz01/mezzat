@@ -5,7 +5,7 @@ export default function Expcard(){
         <div className="flex h-min p-24 pt-60 pl-36 justify-center font-serif">
             <div className="flex flex-col">
                 <h1 className="text-5xl">
-                    Front-end development
+                    Front-end development .
                 </h1>
                 <p className="text-2xl font-thin pt-14 font-sans leading-normal">
                         crafting websites that are not only visually striking <br />
