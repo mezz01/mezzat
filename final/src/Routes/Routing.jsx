@@ -22,7 +22,7 @@ function Routing() {
     <RouterRoutes>
       <Route path="/" element={<HomePageContainer data={data}/>} />
       <Route path="/CreateSurvey" element={<CreateSurveyContainer />}/>
-      <Route path="/SurveyReport/:id" element={<SurveyReportContainer/>} />
+      <Route path="/SurveyReport/:id" element={<SurveyReportContainer data={data}/>} />
       <Route path="/SurveyForm/:id" element={<SurveyFormContainer data={data}/>}/>
     </RouterRoutes>
   )

@@ -4,10 +4,11 @@ import SurveyForm from '../components/survey-form/SurveyForm'
 import {demo} from '../data/data'
 
 function SurveyFormContainer({data}) {
-  console.log(data);
+  console.table(data);
   const {id} = useParams()
-  const [surveys,setSurveys] = useState(data)
-  const [survey,setSurvey] = useState(surveys.find(survey => survey.id === Number(id)))
+  console.log(id);
+  const [survey,setSurvey] = useState(data[id])
+  console.log(survey);
   //
   const [showSurvey, setShowSurvey] = useState(true);
   const [currentQIndex, setCurrentQIndex] = useState(0);

@@ -8,7 +8,7 @@ function CreateSurveyContainer() {
     const [questionBox, setQuestionBox] = useState([{id:Date.now(), qs:'',options:[{id : Date.now()*(Math.floor(Math.random()*999)+1),op : "", count : 0},{id : Date.now()*(Math.floor(Math.random()*999)+1),op : "", count : 0}]}]);
     const title = useRef()
     const description = useRef()
-    const [img,setImg] = useState()
+    const [image,setImg] = useState("../1.jpg")
     const handleImg= (e)=>{
         setImg(e.target.files[0])
     }
@@ -53,12 +53,13 @@ function CreateSurveyContainer() {
         const survey = {
             title : title.current.value,
             description: description.current.value,
+            img : image,
             questions : questionBox
         }
         console.log(survey)
         const docRef = addDoc(surveyRef, survey);
         console.log("Document written with ID: ", docRef.id);
-
+        alert("Your data was added successfully !")
         e.target.reset();
     }
     return (
